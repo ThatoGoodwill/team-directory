@@ -24,22 +24,31 @@ namespace TeamDirectory
             }
 
             Console.WriteLine();
-            Console.Write("Enter a name to search: ");
-            string? searchName = Console.ReadLine();
+           Console.Write("Enter a name to search: ");
+string? searchName = Console.ReadLine();
 
-            bool found = false;
+if (string.IsNullOrWhiteSpace(searchName))
+{
+    Console.WriteLine("Search name cannot be empty.");
+}
+else
+{
+    bool found = false;
 
-            foreach (string member in teamMembers)
-            {
-                if (member.Contains(searchName ?? "", StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine("Found: " + member);
-                    found = true;
-                }              
-            }
-            if(!found){
-                Console.WriteLine("No team members found matching:" + searchName);
-            }
+    foreach (string member in teamMembers)
+    {
+        if (member.Contains(searchName, StringComparison.OrdinalIgnoreCase))
+        {
+            Console.WriteLine($"Found: {member}");
+            found = true;
+        }
+    }
+
+    if (!found)
+    {
+        Console.WriteLine($"No team members found matching: {searchName}");
+    }
+}
              Console.WriteLine("Total team members: " + teamMembers.Count);
         }
     }
