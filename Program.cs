@@ -29,7 +29,7 @@ namespace TeamDirectory
 
             foreach (string member in teamMembers)
             {
-                if (member == searchName)
+                if (member.Contains(searchName ?? "", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine("Found: " + member);
                 }              
