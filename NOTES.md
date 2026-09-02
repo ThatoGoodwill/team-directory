@@ -97,3 +97,7 @@ If the reviewer does not label the comment, I will decide based on whether it af
 I would deliberately use git fetch after my partner has merged a contribution into my repository and before updating my original local repository. git fetch allows me to download information about the remote changes without immediately changing my local main branch.
 
 I could then run git log --oneline main origin/main to compare my local main with origin/main and inspect the changes. After confirming what my partner's contribution looks like, I would run git pull to bring those changes into my local main.
+
+## No-Partner Fallback
+
+I used the no-partner fallback because I was unable to pair with another student for the repository collaboration tasks. I used a second personal GitHub account, thatogoodwill75-collab, to act as the partner and completed the required fork, Pull Request, review, feedback, merge, cleanup, and fetch/pull workflow.
