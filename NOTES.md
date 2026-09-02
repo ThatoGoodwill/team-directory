@@ -101,3 +101,7 @@ I could then run git log --oneline main origin/main to compare my local main wit
 ## No-Partner Fallback
 
 I used the no-partner fallback because I was unable to pair with another student for the repository collaboration tasks. I used a second personal GitHub account, thatogoodwill75-collab, to act as the partner and completed the required fork, Pull Request, review, feedback, merge, cleanup, and fetch/pull workflow.
+
+## Assignment 1.2 Collaboration
+
+This change was made on my fork to demonstrate the fork-to-upstream pull request workflow.
