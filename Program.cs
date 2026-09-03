@@ -18,6 +18,16 @@ namespace TeamDirectory
                 teamMembers.Add(name);
             }
 
+            Console.WriteLine();
+            Console.Write("Display members alphabetically? (y/n): ");
+            string? sortChoice = Console.ReadLine();
+
+            if (sortChoice?.Trim().Equals("y", StringComparison.OrdinalIgnoreCase) == true)
+            {
+                teamMembers.Sort(StringComparer.OrdinalIgnoreCase);
+            }
+            
+
             foreach (string member in teamMembers)
             {
                 Console.WriteLine(member);
